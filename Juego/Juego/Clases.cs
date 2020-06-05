@@ -50,27 +50,27 @@ namespace Clases
             return NuevoPersonaje;
         }
 
-        internal string MostrarDatos(Personaje NuevoPersonaje)
+        internal string MostrarDatos(Personaje Personaje)
         {
             string Datos = "DATOS \n\n" +
-            "Tipo: " + NuevoPersonaje.Tipo + " \n" +
-            "Nombre: " + NuevoPersonaje.Nombre + " " +
-            NuevoPersonaje.Apodo + " \n" +
-            "Fecha de Nacimiento: " + NuevoPersonaje.FechaDeNacimiento + " \n" +
-            "Edad: " + NuevoPersonaje.Edad + " \n" +
-            "Salud: " + NuevoPersonaje.Salud + " \n";
+            "Tipo: " + Personaje.Tipo + " \n" +
+            "Nombre: " + Personaje.Nombre + " " +
+            Personaje.Apodo + " \n" +
+            "Fecha de Nacimiento: " + Personaje.FechaDeNacimiento + " \n" +
+            "Edad: " + Personaje.Edad + " \n" +
+            "Salud: " + Personaje.Salud + " \n";
 
             return Datos;
         }
 
-        internal string MostrarCaracteristicas(Personaje NuevoPersonaje)
+        internal string MostrarCaracteristicas(Personaje Personaje)
         {
             string Caracteristicas = "CARACTERISTICAS \n\n" +
-            "Velocidad: " + NuevoPersonaje.Velocidad + " \n" +
-            "Destreza: " + NuevoPersonaje.Destreza + " \n" +
-            "Fuerza: " + NuevoPersonaje.Fuerza + " \n" +
-            "Nivel: " + NuevoPersonaje.Nivel + " \n" +
-            "Armadura: " + NuevoPersonaje.Armadura + " \n";
+            "Velocidad: " + Personaje.Velocidad + " \n" +
+            "Destreza: " + Personaje.Destreza + " \n" +
+            "Fuerza: " + Personaje.Fuerza + " \n" +
+            "Nivel: " + Personaje.Nivel + " \n" +
+            "Armadura: " + Personaje.Armadura + " \n";
 
             return Caracteristicas;
         }

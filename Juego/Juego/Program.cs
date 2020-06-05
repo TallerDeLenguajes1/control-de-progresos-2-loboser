@@ -14,8 +14,6 @@ namespace Juego
             List<Personaje> ListaDePersonajes = new List<Personaje>();
             Funciones Funcion = new Funciones();
             int CantidadDePersonajes = 2;
-            string Datos;
-            string Caracteristicas;
 
             for (int i = 0; i < CantidadDePersonajes; i++)
             {
@@ -24,13 +22,13 @@ namespace Juego
                 NuevoPersonaje = Funcion.CargarDatos(NuevoPersonaje);
                 NuevoPersonaje = Funcion.CargarCaracteristicas(NuevoPersonaje);
 
-                Datos = Funcion.MostrarDatos(NuevoPersonaje);
-                Caracteristicas = Funcion.MostrarCaracteristicas(NuevoPersonaje);
-
                 ListaDePersonajes.Add(NuevoPersonaje);
+            }
 
-                Console.WriteLine(Datos);
-                Console.WriteLine(Caracteristicas);
+            for(int i = 0; i < CantidadDePersonajes; i++)
+            {
+                Console.WriteLine(Funcion.MostrarDatos(ListaDePersonajes[i]));
+                Console.WriteLine(Funcion.MostrarCaracteristicas(ListaDePersonajes[i]));
             }
 
             Console.WriteLine("Presiona ENTER para continuar...");
