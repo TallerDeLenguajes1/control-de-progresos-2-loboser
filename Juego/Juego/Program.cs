@@ -33,6 +33,10 @@ namespace Juego
                 Console.WriteLine(Caracteristicas);
             }
 
+            Console.WriteLine("Presiona ENTER para continuar...");
+            Console.ReadLine();
+            Console.Clear();
+
             Personaje Personaje1 = ListaDePersonajes[0];
             Personaje Personaje2 = ListaDePersonajes[1];
 
@@ -42,6 +46,10 @@ namespace Juego
                 Console.WriteLine(Funcion.Combate(Personaje2, Personaje1));
             }
 
+            Console.WriteLine("Presiona ENTER para revelar el ganador...");
+            Console.ReadLine();
+            Console.Clear();
+
             if (Funcion.Ganador(Personaje1, Personaje2,ListaDePersonajes) != null)
             {
                 Personaje Ganador = Funcion.Ganador(Personaje1, Personaje2,ListaDePersonajes);
@@ -50,7 +58,7 @@ namespace Juego
             }
             else
             {
-                Console.WriteLine("\nIncreible!, termino en un empate, los dos personajes son eliminados!");
+                Console.WriteLine("\nIncreible!, termino en un empate, los dos personajes son eliminados!\n");
             }
         }
     }

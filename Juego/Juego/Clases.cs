@@ -124,7 +124,7 @@ namespace Clases
 
         internal string InformacionDelGanador(Personaje Ganador)
         {
-            return "\nDATOS \n\n" +
+            return "DATOS \n\n" +
                 "Tipo: " + Ganador.Tipo + " \n" +
                 "Nombre: " + Ganador.Nombre + " " +
                 Ganador.Apodo + " \n" +
@@ -162,11 +162,11 @@ namespace Clases
                     break;
                 case 4:
                     Ganador.Nivel += 4;
-                    recompensa = " ha recibido un aumento de 4 puntos NIVEL como recompensa aleatoria!";
+                    recompensa = " ha recibido un aumento de 4 NIVELES como recompensa aleatoria!";
                     break;
                 case 5:
                     Ganador.Armadura += 4;
-                    recompensa = " ha recibido un aumento de 4 puntos ARMADURA como recompensa aleatoria!";
+                    recompensa = " ha recibido un aumento de 4 puntos de ARMADURA como recompensa aleatoria!";
                     break;
                 case 6:
                     Ganador.Salud += 10;
@@ -176,7 +176,7 @@ namespace Clases
                     recompensa = "";
                     break;
             }
-            return "\n" + Ganador.Nombre + " " + Ganador.Apodo + recompensa;
+            return "\n" + Ganador.Nombre + " " + Ganador.Apodo + recompensa + "\n";
         }
     }
 }

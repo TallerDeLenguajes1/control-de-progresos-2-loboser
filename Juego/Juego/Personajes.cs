@@ -51,7 +51,7 @@ namespace Personajes
         public int Atacar(Personaje Defensor)
         {
             float PoderDeAtaque = Destreza * Fuerza * Nivel;
-            float EfectividadDeDisparo = new Random().Next(20,40);
+            float EfectividadDeDisparo = new Random().Next(20,50); //Le reduzco algo para que sea mas "equilibrado"
             float ValorDeAtaque = PoderDeAtaque * EfectividadDeDisparo;
             float PoderDeDefensa = Defensor.Armadura * Defensor.Velocidad;
             int DañoProvocado = (int)((((ValorDeAtaque * EfectividadDeDisparo) - PoderDeDefensa) / (int)Maximos.DañoMax) * 10);
