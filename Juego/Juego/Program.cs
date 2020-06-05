@@ -31,7 +31,7 @@ namespace Juego
                 Console.WriteLine(Funcion.MostrarCaracteristicas(ListaDePersonajes[i]));
             }
 
-            Console.WriteLine("Presiona ENTER para continuar...");
+            Console.WriteLine("\nPresiona ENTER para continuar...");
             Console.ReadLine();
             Console.Clear();
 
@@ -44,7 +44,7 @@ namespace Juego
                 Console.WriteLine(Funcion.Combate(Personaje2, Personaje1));
             }
 
-            Console.WriteLine("Presiona ENTER para revelar el ganador...");
+            Console.WriteLine("\nPresiona ENTER para revelar el ganador...");
             Console.ReadLine();
             Console.Clear();
 
